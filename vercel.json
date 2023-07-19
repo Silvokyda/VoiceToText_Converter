@@ -9,7 +9,7 @@
         }
       },
       {
-        "src": "static/(.*)",
+        "src": "myApp/static/(.*)",
         "use": "@vercel/static"
       }
     ],
