@@ -11,16 +11,10 @@
     ],
     "routes": [
       {
-        "src": "/static/(.*)",     
-        "dest": "static/$1",     
+        "src": "/static/(.*)",
+        "dest": "/static/$1",
         "headers": {
-          "source": "/static/(.*)",   
-          "headers": [
-            {
-              "key": "Content-Type",
-              "value": "text/$1"      
-            }
-          ]
+          "Content-Type": "text/$1"
         }
       },
       {
