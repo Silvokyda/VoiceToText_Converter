@@ -4,6 +4,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel=icon href=https://speechnotes.co/favicon2.ico sizes=any>
+    <link rel=icon type=image/svg+xml href=https://speechnotes.co/favicon2.svg>
+    <link rel=icon type=image/png sizes=32x32 href=https://speechnotes.co/favicon2-32x32.png>
+    <link rel=icon type=image/png sizes=16x16 href=https://speechnotes.co/favicon2-16x16.png>
     <title>Speech-to-Text Converter</title>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
     
@@ -11,16 +15,14 @@
   <body>
     <div class="container">
       <h1>Speech-to-Text Converter</h1>
-      <div class="text-box">
-        <textarea id="input-text" placeholder="Speak here..."></textarea>
-      </div>
-      <script src="{% static 'script.js' %}"></script>
       <button id="start-btn">Start Recording</button>
       <button id="stop-btn" disabled>Stop Recording</button>
       <div class="output-box">
         <h2>Transcribed Text:</h2>
-        <p id="transcribed-text"></p>
+        <textarea id="transcribed-text"></textarea>
+        <button id="download-btn">Download Text</button>
       </div>
     </div>
+    <script src="{% static 'script.js' %}"></script>
   </body>
 </html>
